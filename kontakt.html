@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/parfemi.png" type="image/x-icon">
+    <title>Kontakt</title>
+    <script src="script/test.js" async></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/parfemi.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+
+       
+        <nav class="navarea">
+
+            <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="dropdown"><a href="o_nama.html" >O nama</a>
+                        
+                    </li>
+                    <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                        <ul class="submenu">
+                            <li><a href="zenski.html">Zenski parfemi</a></li>
+                            <li><a href="muski.html">Muski parfemi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+
+
+    </nav>
+
+
+
+
+
+        <h1 id="jedanh1">KONTAKT I LOKACIJA</h1>
+        <div class="jedankontakt" id="jedank">
+            
+            <div id="flexcontainerkontakt">
+            
+            <p>Parfimerija Rafaelo</p>
+            <p>Jove Ilića 154, 11000 Beograd</p>
+            <p>Republika Srbija</p>
+            <p>Tel: +381 64 400 500</p>
+            <p>Fax: +381 11 474 574</p>
+            <p><a href = "mailto: rafaelo@parfemi.com">rafaelo@parfemi.com</a></p>
+        </div>
+            <div id="flexboxcontainermapa">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.3970177635297!2d20.47284641553438!3d44.77271077909886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a705762332ab5%3A0x422a527f1ff25cac!2sJove%20Ili%C4%87a%20154%2C%20Beograd%2011000!5e0!3m2!1sen!2srs!4v1625254338127!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a href="https://www.whatismyip-address.com">how do you get your ip address</a></div>
+                        </div>
+            </div>
+        </div>
+        <div class="dva">
+            <h1>IMATE LI PITANJA?</h1> 
+            <div id="flexcontainer">
+            <div id="flexcontainerslika">
+            <img src="img/pismo.png" alt="">
+            </div>
+
+            <form name="Forma" onsubmit="return formasubmit(this)" method="POST" onreset="formareset()">
+                  <div id="flexcontainertext">   
+               <input type="text" name="text1" class="textF" placeholder="Ime"><br>
+                <span id="errorIme"></span> <br>
+                <input type="text" name="text2" class="textF" placeholder="Prezime"><br>
+                <span id="errorPrezime"></span> <br>
+                <input type="email" name="mail1" class="textF" placeholder="E-mail"><br>
+                <span id="errorMail"></span>  <br>
+                <input type="text" name="phone1" class="textF" placeholder="Telefon"><br>
+                <span id="errorPhone"></span> <br>
+                <textarea name="textA1" id="ta1" cols="30" rows="10" placeholder="Vaše pitanje..."></textarea> <br>
+                <span id="errorPoruka"></span> 
+                 </div>
+
+                <div id="flexcontainerpotvrda">
+                <input type="submit" name="submit" value="Pošalji" id="submit1" > <br> <input type="reset" id="reset1" value="Poništi">
+                </div>
+                <br>
+            </div>
+            
+            </form>
+        </div>
+            <br>
+        </div>
+
+
+
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Radujemo se Vašoj poseti i svakom novom zajedničkom iskustvu.
+            </p>
+            <p id="poslednjip"> Copiright EPOS team</p>
+        </footer>
+    </div>
+
+
+</body>

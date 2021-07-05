@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+    <script src="script/jquery.fancybox.min.js"></script>
+    <title>Muški parfemi</title>
+    <script src="script/test.js" async></script>
+    <link rel="shortcut icon" href="img/parfemi.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/parfemi.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+                <nav class="navarea">
+
+            <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="dropdown"><a href="o_nama.html" >O nama</a>
+                        
+                    </li>
+                    <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                        <ul class="submenu">
+                            <li><a href="zenski.html">Zenski parfemi</a></li>
+                            <li><a href="muski.html">Muski parfemi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+
+
+    </nav>
+
+            
+        <div class="jedanbic">
+            <h1>Muški parfemi</h1>
+             <div class="jedanindex">
+           
+        <div class="slideshow-container">
+
+            
+            <div class="mySlides fade">
+                <img src="img/muski1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/muski2.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="img/muski3.jpg" style="width:100%">
+            </div>
+        
+            
+
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+      
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+           
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Radujemo se Vašoj poseti i svakom novom zajedničkom iskustvu.
+            </p>
+            <p id="poslednjip"> Copiright EPOS team</p>
+        </footer>
+    </div>
+</body>

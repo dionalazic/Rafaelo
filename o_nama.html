@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>O nama</title>
+    <script src="script/test.js" async></script>
+    <link rel="shortcut icon" href="img/parfemi.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+
+            <div id="flexcontainerlogo">
+            <a href="index.html"><img id="logo" src="img/parfemi.png"/></a>
+            </div>
+
+            <div id="flexcontainermreze">
+            <a href="https://www.facebook.com"><img id="fb" src="img/fb.png"/></a>
+            <a href="https://www.youtube.com"><img id="yt" src="img/yt.png"/></a>
+            <a href="https://www.instagram.com"><img id="ig" src="img/ig.png"/></a>
+            </div>
+        </header>
+                <nav class="navarea">
+
+                        <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="dropdown"><a href="o_nama.html" >O nama</a>
+                        
+                    </li>
+                    <li class="dropdown"><a href="#" >Proizvodi +</a> 
+                        <ul class="submenu">
+                            <li><a href="zenski.html">Zenski parfemi</a></li>
+                            <li><a href="muski.html">Muski parfemi</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            
+            
+            
+                </nav>
+            
+        <div class="jedan">
+            <h1>KO SMO MI</h1>
+            <br>
+            <div id="flexcontainerjedan">
+                    
+                <div class="flexslikatekst">
+                    
+            <p>
+                    <span>O nama</span> <br> <br>
+                    Toplina i ušuškanost, provokacija i stimulacija, sofisticiranost i prefinjenost, smelost i nedokučivost, strast i senzualnost ili potpuno nov pogled na život, parfeme i zavođenje kroz samo jednu kap mirisa. Putovanja kuda Vas želja vodi, jer čulima nije potreban pasoš. Poigravanje kontradiktornostima uvek u skladnom balansu. I uvek kao izazov konvencionalnom i svakodnevnom. Za trendsetere i ljubitelje klasike, nova dimenzija elegancije i deo zvanične turističke ponude glavnog grada u samom srcu Beograda, ulici koja nosi atmosferu i duh metropole i poziva Vas da otkrijete jedinstvenu kreativnu zonu mirisa i urbanu oazu šarma, luksuza, lepote i zadovoljstava.
+            </p>
+            <img src="img/parfem4.jpg" alt="" id="istorija">
+        </div>
+
+
+        <div class="flexslikatekst">
+            <img src="img/evropa.png" alt="" id="evropa">
+            <p>
+                    <span>LOKACIJA</span> <br> <br>
+                    U prošlosti je brend Rafaelo bio prvenstveno orijentisan na evropsko tržište, iz razloga što su prvi proizvodi 
+                    bili namenjeni prvenstveno Evropi. Trenutno se distribuiraju širom sveta posredstvom globalne prodajne mreže. <br> 
+            </p>
+
+
+        </div>
+
+
+        <div class="flexslikatekst">
+            <p>
+                    <span>Mirisne svece</span> <br> <br>
+                    Mirisne sveće kao najprefinjeniji statusni simboli i ukrasi, mala–velika zadovoljstva koja čine da prostor u kome živimo bude najprijatnije mesto na svetu, i savršeni luksuzni pokloni za sve prilike. Stil i stav, prefinjenost, lucidnost, kreativnost… Poezija, moda, fotografija, dizajn… Parfimerija, galerija i adresa na kojoj stanuju parfemi koji imaju ličnost. Umetnost kao sastavni deo parfema i parfem kao umetničko delo. 
+            </p>
+            <img src="img/svece.jpg" alt="" id="polj">
+        </div>
+
+        
+        
+        </div>
+        </div>
+
+
+        
+
+
+
+
+        <footer id="footer">
+            <p id="prvip"><span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+            </script>
+            <p>
+                Radujemo se Vašoj poseti i svakom novom zajedničkom iskustvu.
+            </p>
+            <p id="poslednjip"> Copiright EPOS team</p>
+        </footer>
+    </div>
+
+
+</body>
